@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>com.CUSTOM</title>
+  <style>
+    body{
+      background-color: lightblue;
+    }
+    .container{
+      margin: auto;
+      background-image: url('back.png');
+      border-radius: 10px;
+    }
+    .h1{
+      background-image: url('back.png');
+      height: 45px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    h1{
+      font-family: Monospace;
+      padding-top: 20px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .atas button:hover{
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      outline: none;
+    }
+    .atas button{
+      border-radius: 10px;
+      color: white;
+      background-color: black;
+      margin: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+    .copyright{
+      background-color:black;
+      color: white;
+    }
+    h2{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 10px;
+      text-align: center;
+    }
+    p{
+      font-family: Arial;
+      padding-left: 5px;
+    }
+    .bawah button{
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      margin-left: 5px;
+      outline: none;
+    }
+    .bawah button:hover{
+      background-color: black;
+      color: white;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="h1">
+      <h1>CUSTOM.Web</h1>
+    </div>
+    <div class="atas">
+      <button id="isi">isi</button>
+      <button id="error">info</button>
+    </div>
+    
+    <p>
+      ISI HALAMAN (SILAKAN DI CUSTOM SENDIRI)
+    </p>
+    <div class="copyright">
+      <h2>FREE COPYRIGHT EKSADEV (2021)</h2>
+    </div>
+  </div>
+  <script src="dist/sweetalert2.all.min.js"></script>
+  <script>
+    const suka = document.getElementById('suka')
+    const isi = document.getElementById('isi')
+    const error = document.getElementById('error')
+    
+    
+    isi.addEventListener('click', function(){
+      swal.fire({
+        title:'anda sedang disini'
+      })
+    })
+    
+    error.addEventListener('click',function(){
+      swal.fire({
+        icon:'error',
+        title:'tambahkan sendiri halaman'
+      })
+    })
+  </script>
+</body>
+</html>
